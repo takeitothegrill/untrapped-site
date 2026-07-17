@@ -425,7 +425,25 @@ h1, h2, h3, h4, blockquote p {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--brand-forest);
-  margin-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.key-status {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.key-status-original {
+  color: var(--brand-green);
+}
+
+.key-status-placeholder {
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .key-item p {
