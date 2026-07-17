@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>unTRAPPED — Disability Access Advocacy & Map (Capricorn Region, Central QLD)</title>
+  <title>(un)TRAPPED — Disability Access Advocacy & Map (Capricorn Region, Central QLD)</title>
   <meta name="description" content="unTRAPPED maps real accessibility conditions for wheelchair and mobility-device users in Central Queensland. We provide evidence to help locals move safely and pressure councils for repairs.">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,15 +15,19 @@
   <!-- Header -->
   <header class="main-header">
     <div class="header-container">
-      <a href="#" class="logo" aria-label="unTRAPPED Home">
-        <span class="logo-un">(un)</span><span class="logo-trapped">TRAPPED</span>
-      </a>
+      <div class="logo-wrapper">
+        <a href="#" class="logo" aria-label="unTRAPPED Home">
+          <span class="logo-un">un</span><span class="logo-trapped">TRAPPED</span>
+        </a>
+        <p class="logo-tagline">ACCESS FOR ALL. EVERYWHERE.</p>
+      </div>
       <nav class="main-nav" aria-label="Primary Navigation">
         <ul>
-          <li><a href="#map-section">The Map</a></li>
-          <li><a href="#findings-section">Key Findings</a></li>
+          <li><a href="#map-section">Map</a></li>
+          <li><a href="#findings-section">Findings</a></li>
+          <li><a href="#report-section">Report</a></li>
           <li><a href="#bio-section">About</a></li>
-          <li><a href="#report-section" class="nav-cta">Report Hazard</a></li>
+          <li><a href="#report-section" class="nav-cta">Get Involved</a></li>
         </ul>
       </nav>
     </div>
@@ -33,81 +37,148 @@
     
     <!-- Hero Section -->
     <section class="hero-section">
+      <div class="hero-bg-overlay"></div>
       <div class="hero-container">
-        <p class="hero-tag">Capricorn Coast Accessibility Campaign</p>
+        <span class="hero-tag">Capricorn Coast Accessibility Campaign</span>
         <h1 class="hero-title">Getting around town shouldn’t put you in hospital.</h1>
+        <div class="hero-divider"></div>
         <p class="hero-subtitle">
-          <strong>(un)TRAPPED</strong> maps real, daily accessibility conditions for wheelchair users, walker users, and residents with mobility disabilities across Central Queensland. We document pathways, toilets, parking, and entrances to help you move safely—and to give local councils clear proof of what must be fixed.
+          We’re mapping accessibility across the Capricorn region to build safer, more inclusive communities for everyone.
         </p>
         <div class="hero-actions">
-          <a href="#map-section" class="btn btn-primary">View the Access Map</a>
-          <a href="#report-section" class="btn btn-secondary">Report an Access Barrier</a>
+          <a href="#map-section" class="btn btn-primary">
+            <!-- Inline Map Pin SVG -->
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            Explore the Map
+          </a>
+          <a href="#report-section" class="btn btn-secondary">
+            <!-- Inline Pen/Report SVG -->
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4Z"></path>
+            </svg>
+            Report an Issue
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Map Section -->
+    <!-- Map & Key Section -->
     <section id="map-section" class="map-section">
       <div class="section-container">
-        <div class="section-header">
-          <h2>Capricorn Accessibility Evidence Map</h2>
-          <p class="section-intro">
-            This live map is the primary evidence archive for the campaign. It details real-world access audits conducted by Michael Page across Yeppoon and Emu Park.
+        
+        <div class="map-grid">
+          <!-- Left: Iframe Map -->
+          <div class="map-left-col">
+            <div class="map-wrapper">
+              <iframe 
+                src="https://www.google.com/maps/d/embed?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48" 
+                title="unTRAPPED Google My Map showing accessibility ratings in Yeppoon and Emu Park" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+          
+          <!-- Right: Text Content -->
+          <div class="map-right-col">
+            <span class="section-badge">OUR MAP</span>
+            <h2 class="section-title">A community-built map of real accessibility.</h2>
+            <p class="section-desc">
+              Our Google My Map shows accessibility features, hazards and missing infrastructure across the Capricorn region, covering toilets, parking, pathways, and venues.
+            </p>
+            <div class="map-actions">
+              <a href="https://www.google.com/maps/d/viewer?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-map-external">
+                Open the Map
+                <!-- Inline External Link SVG -->
+                <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clearly Labelled Symbols Key -->
+        <div class="symbols-key">
+          <span class="section-badge center">KEY</span>
+          <h3 class="key-section-title">What the symbols mean</h3>
+          <p class="key-section-subtitle">
+            The live map utilizes these categories and symbols to document accessibility barriers and amenities:
           </p>
-        </div>
-
-        <!-- Google My Map Embed Frame -->
-        <div class="map-wrapper">
-          <iframe 
-            src="https://www.google.com/maps/d/embed?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48" 
-            title="unTRAPPED Google My Map showing accessibility ratings in Yeppoon and Emu Park" 
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <div class="map-actions">
-          <a href="https://www.google.com/maps/d/viewer?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-            Open Full Map in New Window
-            <span class="sr-only">(opens in a new tab)</span>
-          </a>
-        </div>
-
-        <!-- Map Rating Legend -->
-        <div class="legend-box">
-          <h3 class="legend-title">Rating Legend & Vocabulary</h3>
-          <p class="legend-intro">Michael uses this vocabulary to document real access conditions compared to actual standards:</p>
-          <div class="legend-grid">
-            <div class="legend-item">
-              <span class="badge rating-excellent">EXCELLENT</span>
-              <span class="legend-desc">Fully accessible, modern, easy compliance.</span>
+          
+          <div class="key-grid">
+            <!-- 1. Toilets -->
+            <div class="key-item">
+              <div class="key-circle circle-toilet">
+                <img src="assets/icon-toilet-v2.png" alt="" class="key-img-asset">
+              </div>
+              <h4>Toilets</h4>
+              <p>Accessible public toilets and amenities available.</p>
             </div>
-            <div class="legend-item">
-              <span class="badge rating-good">GOOD</span>
-              <span class="legend-desc">Highly accessible with minor standard exceptions.</span>
+            
+            <!-- 2. Disability Parking -->
+            <div class="key-item">
+              <div class="key-circle circle-parking">
+                <img src="assets/icon-parking-v2.png" alt="" class="key-img-asset">
+              </div>
+              <h4>Disability Parking</h4>
+              <p>Designated parking spaces with safe side or rear access.</p>
             </div>
-            <div class="legend-item">
-              <span class="badge rating-standard">STANDARD</span>
-              <span class="legend-desc">Meets baseline Australian Standard requirements.</span>
+            
+            <!-- 3. Pathways -->
+            <div class="key-item">
+              <div class="key-circle circle-pathways">
+                <!-- Pathway SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19c3-1 6-2 10-2s7 1 10 2M4 12c3-1 6-2 10-2s7 1 10 2M4 5c3-1 6-2 10-2s7 1 10 2"/>
+                </svg>
+              </div>
+              <h4>Pathways</h4>
+              <p>Footpaths, beach accesses, shared paths and crossings.</p>
             </div>
-            <div class="legend-item">
-              <span class="badge rating-okay">OKAY</span>
-              <span class="legend-desc">Passable but presents difficulties (e.g. minor bumps, heavy door).</span>
+            
+            <!-- 4. Venue Access -->
+            <div class="key-item">
+              <div class="key-circle circle-venues">
+                <!-- Venue/Building Access SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <path d="M9 21V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12"></path>
+                </svg>
+              </div>
+              <h4>Venue Access</h4>
+              <p>Ramps, elevators, entrances and step-free venue entry.</p>
             </div>
-            <div class="legend-item">
-              <span class="badge rating-passable">PASSABLE</span>
-              <span class="legend-desc">Access is possible but requires physical effort or assistance.</span>
+            
+            <!-- 5. Accessible Amenities -->
+            <div class="key-item">
+              <div class="key-circle circle-amenities">
+                <!-- BBQ / Table SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h4>Accessible Amenities</h4>
+              <p>Adapted picnic tables, BBQs, seating, and beach mats.</p>
             </div>
-            <div class="legend-item">
-              <span class="badge rating-poor">POOR</span>
-              <span class="legend-desc">Substandard infrastructure posing obstacles for independent travel.</span>
-            </div>
-            <div class="legend-item">
-              <span class="badge rating-very-poor">VERY POOR</span>
-              <span class="legend-desc">Severe barrier posing trip/tip hazards and high risk of injury.</span>
-            </div>
-            <div class="legend-item">
-              <span class="badge rating-missing">MISSING!</span>
-              <span class="legend-desc">Crucial infrastructure completely absent (e.g. no kerb ramp).</span>
+            
+            <!-- 6. Hazards / Missing -->
+            <div class="key-item">
+              <div class="key-circle circle-hazards">
+                <!-- Warning SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <h4>Hazards / Missing</h4>
+              <p>Physical obstacles, falls risks, and missing infrastructure.</p>
             </div>
           </div>
         </div>
@@ -116,7 +187,7 @@
         <div class="accessible-text-alternative">
           <h3 id="accessible-list-title">Accessible Text-Based Locations Directory</h3>
           <p class="alternative-intro">
-            For visitors using screen readers or those who prefer text navigation, the accordion sections below list all 97 audited locations and ratings from the map:
+            A mobile-friendly, screen-reader accessible alternative listing the audited locations and observations from the live map:
           </p>
 
           <details class="category-accordion">
@@ -817,36 +888,65 @@
   </div>
 </details>
 
-<details class="category-accordion">
-  <summary>
-    <span class="category-title">Yeppon CBD</span>
-    <span class="category-count">(1 locations)</span>
-  </summary>
-  <div class="category-content">
-    <ul class="location-list">
-      <li class="location-item">
-        <div class="location-header">
-          <span class="location-name">Yeppoon [unTR@PPED]</span>
-          
-        </div>
-        <p class="location-desc">The area of the Yeppoon CBD that this unTR@PPED MAP covers.</p>
-      </li>
-    </ul>
-  </div>
-</details>
-
 
         </div>
       </div>
     </section>
 
-    <!-- Key Findings (Evidence) Section -->
+    <!-- KML Statistics Section -->
+    <section class="stats-section">
+      <div class="section-container">
+        <span class="section-badge center">WHAT WE'VE FOUND</span>
+        <h2 class="stats-section-title">The gaps are real — and they affect real lives.</h2>
+        <p class="stats-section-subtitle">Real metrics compiled from Michael Page's KML map audits across Yeppoon and Emu Park:</p>
+        
+        <div class="stats-grid">
+          <!-- 1. Total Audited -->
+          <div class="stats-card">
+            <div class="stats-number">97</div>
+            <div class="stats-label">Locations Audited</div>
+            <p class="stats-desc">Total on-ground locations checked and logged in the region.</p>
+          </div>
+          
+          <!-- 2. Excellent -->
+          <div class="stats-card">
+            <div class="stats-number">24</div>
+            <div class="stats-label">Excellent Access</div>
+            <p class="stats-desc">Positive exemplars showing fully accessible and compliant facilities.</p>
+          </div>
+          
+          <!-- 3. Toilets -->
+          <div class="stats-card">
+            <div class="stats-number">23</div>
+            <div class="stats-label">Audited Toilets</div>
+            <p class="stats-desc">Public facilities audited for locks, support rails, and space width.</p>
+          </div>
+          
+          <!-- 4. Pathways -->
+          <div class="stats-card">
+            <div class="stats-number">26</div>
+            <div class="stats-label">Audited Pathways</div>
+            <p class="stats-desc">Pedestrian walkways and beach accesses audited for safety hazards.</p>
+          </div>
+          
+          <!-- 5. Disability Parking -->
+          <div class="stats-card">
+            <div class="stats-number">16</div>
+            <div class="stats-label">Disabled Parking Spots</div>
+            <p class="stats-desc">Dedicated spaces audited for safe boarding and path connections.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Findings Section -->
     <section id="findings-section" class="findings-section">
       <div class="section-container">
         <div class="section-header">
+          <span class="section-badge">KEY OBSERVATIONS</span>
           <h2>Audited Infrastructure Findings</h2>
           <p class="section-intro">
-            Below are three high-impact examples from Michael's audits that highlight critical accessibility failures alongside achieved successes.
+            High-impact examples from Michael's audits that highlight severe accessibility failures alongside achieved successes.
           </p>
         </div>
 
@@ -893,40 +993,98 @@
     <!-- Who's Behind This Section -->
     <section id="bio-section" class="bio-section">
       <div class="section-container">
+        <span class="section-badge">WHO'S BEHIND THIS</span>
+        <h2 class="bio-section-title">Built by locals. Backed by community.</h2>
+        
         <div class="bio-grid">
-          <div class="bio-content">
-            <h2>Who’s Behind This Campaign?</h2>
-            <p class="bio-paragraph">
-              Michael Page is a dedicated disability advocate in the Capricorn region of Central Queensland. He is a long-time advocate with the Capricorn Access & Equity Group—the region’s longest-running accessibility community group—and served as Chair of the Accessibility Capricornia Group, which meets bi-monthly with the Livingstone Mayor, councillors, and engineers to discuss urgent local fixes.
+          <!-- Left: Bio Text -->
+          <div class="bio-content-col">
+            <p class="bio-intro-text">
+              unTRAPPED is a grassroots advocacy campaign led by Michael Page, working constructively with local councils, residents, and carers to improve public safety and mobility access.
             </p>
             <p class="bio-paragraph">
-              Professionally, Michael works in community engagement at Capricorn Citizen Advocacy, a disability advocacy charity in Rockhampton. Having lived experience of daily disability care advocacy from 2017 to 2023, Michael understands the difference between theoretical standards and real-world barriers that keep disabled residents trapped in their homes.
+              Michael is a long-time advocate with the Capricorn Access & Equity Group—Central Queensland's longest-running accessibility community group—and served a term as Chair of the Accessibility Capricornia Group. In that role, he meets bi-monthly with the Livingstone Mayor, councillors, and engineers to negotiate practical infrastructure repairs.
             </p>
+            <p class="bio-paragraph">
+              Professionally, Michael works in community engagement at Capricorn Citizen Advocacy, a disability advocacy charity in Rockhampton, and has daily personal experience of disability care advocacy from 2017 to 2023.
+            </p>
+            <div class="bio-actions">
+              <a href="#report-section" class="btn btn-secondary">Contact the Campaign</a>
+            </div>
           </div>
-          <div class="bio-quote-box">
-            <blockquote>
-              <p>"Here is the evidence. Let's fix it. Accessible infrastructure isn't a luxury—it's safety and independence for our community."</p>
-              <cite>— Michael Page</cite>
-            </blockquote>
+          
+          <!-- Right: Circular Images Grid -->
+          <div class="bio-images-col">
+            <div class="bio-avatar-grid">
+              
+              <!-- 1. Lived Experience -->
+              <div class="bio-avatar-item">
+                <img src="assets/bio-lived-experience.png" alt="Wheelchair user looking at the ocean" class="bio-avatar-img">
+                <span class="bio-avatar-label">People with lived experience</span>
+              </div>
+              
+              <!-- 2. Volunteers -->
+              <div class="bio-avatar-item">
+                <img src="assets/bio-volunteers.png" alt="Two advocates in safety vests on a pathway" class="bio-avatar-img">
+                <span class="bio-avatar-label">Local volunteers & advocates</span>
+              </div>
+              
+              <!-- 3. Region -->
+              <div class="bio-avatar-item">
+                <img src="assets/bio-capricorn-coast.png" alt="Aerial view of Capricorn coastline" class="bio-avatar-img">
+                <span class="bio-avatar-label">Capricorn region communities</span>
+              </div>
+              
+              <!-- 4. Together -->
+              <div class="bio-avatar-item">
+                <img src="assets/bio-collaboration.png" alt="Hands joined together in unity" class="bio-avatar-img">
+                <span class="bio-avatar-label">Stronger together for change</span>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Seen Something? Tell Us Section -->
+    <!-- Report Section -->
     <section id="report-section" class="report-section">
       <div class="section-container">
         <div class="report-box">
-          <h2>Seen something? Tell us.</h2>
-          <p>
-            Help keep the accessibility map up to date. If you find an access hazard, missing infrastructure, a barrier, or an example of excellent design, send us a report so we can add it to the evidence database.
-          </p>
-          <a href="mailto:michael.page010@icloud.com?subject=unTRAPPED%20access%20report&body=1.%20Location%20Name%2FStreet%20Address%3A%0A%0A2.%20Accessibility%20Issue%20or%20Success%20observed%3A%0A%0A3.%20Describe%20the%20hazard%2C%20barrier%2C%20or%20excellent%20feature%3A%0A%0A4.%20Do%20you%20have%20a%20photo%20available%3F%20(Please%20attach%20it%20to%20this%20email)%3A" class="btn btn-primary btn-large">
-            Email an Access Report
-          </a>
-          <p class="report-note">
-            Note: In V1, reports are processed manually via email. A dedicated community reporting form is planned for V1.1.
-          </p>
+          <div class="report-icon-col">
+            <div class="report-phone-circle">
+              <!-- Inline Smartphone Audit SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                <circle cx="12" cy="10" r="3"></circle>
+                <line x1="14.5" y1="12.5" x2="18.5" y2="16.5"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="report-text-col">
+            <span class="section-badge">SPOT SOMETHING?</span>
+            <h2>TELL US AND HELP FIX IT.</h2>
+            <p>
+              Your report helps build a better map and push for real change in our communities. Report an access hazard, missing infrastructure, or a success to Michael.
+            </p>
+            <div class="report-actions">
+              <a href="mailto:michael.page010@icloud.com?subject=unTRAPPED%20access%20report&body=1.%20Location%20Name%2FStreet%20Address%3A%0A%0A2.%20Accessibility%20Issue%20or%20Success%20observed%3A%0A%0A3.%20Describe%20the%20hazard%2C%20barrier%2C%20or%20excellent%20feature%3A%0A%0A4.%20Do%20you%20have%20a%20photo%20available%3F%20(Please%20attach%20it%20to%20this%20email)%3A" class="btn btn-primary">
+                <!-- Inline Email SVG -->
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m22 2-7 20-4-9-9-4Z"></path>
+                  <path d="M22 2 11 13"></path>
+                </svg>
+                Report an Issue
+              </a>
+              <a href="#map-section" class="btn btn-secondary">
+                Learn How to Report
+              </a>
+            </div>
+            <p class="report-note">
+              Note: V1 reports are processed manually via email. A reporting form is planned for V1.1.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -936,19 +1094,56 @@
   <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-container">
-      <div class="footer-details">
-        <p class="footer-brand"><span class="logo-un">(un)</span>TRAPPED</p>
-        <p class="footer-email">Email: <a href="mailto:michael.page010@icloud.com">michael.page010@icloud.com</a></p>
-        <p class="footer-advocacy">unTRAPPED is an independent community advocacy initiative. We work constructively with local councils to improve public safety and accessibility.</p>
+      
+      <!-- Footer Top Row -->
+      <div class="footer-top-row">
+        <div class="footer-logo-col">
+          <a href="#" class="logo footer-logo" aria-label="unTRAPPED Home">
+            <span class="logo-un">un</span><span class="logo-trapped">TRAPPED</span>
+          </a>
+          <p class="logo-tagline">ACCESS FOR ALL. EVERYWHERE.</p>
+        </div>
+        <div class="footer-links-col">
+          <ul class="footer-menu">
+            <li><a href="#map-section">Map</a></li>
+            <li><a href="#findings-section">Findings</a></li>
+            <li><a href="#report-section">Report</a></li>
+            <li><a href="#bio-section">About</a></li>
+            <li><a href="mailto:michael.page010@icloud.com">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <div class="social-links">
+            <a href="mailto:michael.page010@icloud.com" aria-label="Email Michael Page">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 2-7 20-4-9-9-4Z"></path>
+                <path d="M22 2 11 13"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-meta">
-        <p class="acknowledgement">
-          We acknowledge the past and present Elders of Darumbal country and their continuing connection to land, sea and community. We pay our respects to them and their culture.
-        </p>
-        <p class="copyright">
-          &copy; 2026 unTRAPPED. All rights reserved. Map data is compiled by Michael Page.
-        </p>
+      
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+      
+      <!-- Footer Bottom Row -->
+      <div class="footer-bottom-row">
+        <div class="acknowledgement-box">
+          <p class="acknowledgement">
+            We acknowledge the past and present Elders of Darumbal country and their continuing connection to land, sea and community. We pay our respects to them and their culture.
+          </p>
+        </div>
+        <div class="copyright-box">
+          <p class="copyright">
+            &copy; 2026 unTRAPPED. All rights reserved. Campaign website and audits by Michael Page.
+          </p>
+          <p class="copyright-sub">
+            This site is an independent community advocacy initiative in Central Queensland.
+          </p>
+        </div>
       </div>
+      
     </div>
   </footer>
 
