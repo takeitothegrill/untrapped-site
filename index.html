@@ -34,16 +34,16 @@
   </header>
 
   <main id="main-content">
-    
+
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-bg-overlay"></div>
       <div class="hero-container">
-        <span class="hero-tag">Capricorn Coast Accessibility Campaign</span>
+        <span class="hero-tag">Capricornia Accessibility Campaign</span>
         <h1 class="hero-title">Getting around town shouldn’t put you in hospital.</h1>
         <div class="hero-divider"></div>
         <p class="hero-subtitle">
-          We’re mapping accessibility across the Capricorn region to build safer, more inclusive communities for everyone.
+          We’re mapping accessibility across the Capricornia region to build safe and fully inclusive communities for everyone.
         </p>
         <div class="hero-actions">
           <a href="#map-section" class="btn btn-primary">
@@ -65,125 +65,203 @@
       </div>
     </section>
 
-    <!-- Map & Key Section -->
-    <section id="map-section" class="map-section">
+    <!-- Incident Cards Section -->
+    <section class="incidents-section">
       <div class="section-container">
-        
-        <div class="map-grid">
-          <!-- Left: Iframe Map -->
-          <div class="map-left-col">
-            <div class="map-wrapper">
-              <iframe 
-                src="https://www.google.com/maps/d/embed?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48" 
-                title="unTRAPPED Google My Map showing accessibility ratings in Yeppoon and Emu Park" 
-                loading="lazy">
-              </iframe>
+        <span class="section-badge center">RECENT ACCIDENTS</span>
+        <h2 class="section-title text-center" style="text-align: center; margin-bottom: 48px;">Real-World Impact: Local Access Incidents</h2>
+        <div class="incidents-grid">
+          <!-- Card 1 -->
+          <article class="incident-card">
+            <div class="incident-date">November 2025</div>
+            <p class="incident-body">
+              Man with brain cancer in wheelchair flips over on Farnborough Road and is hospitalised.
+            </p>
+          </article>
+          <!-- Card 2 -->
+          <article class="incident-card">
+            <div class="incident-date">March 2026</div>
+            <p class="incident-body">
+              A woman in a wheelchair with a permanent physical disability flips her wheelchair in the multi-storey car park. Ambulances called.
+            </p>
+          </article>
+          <!-- Card 3 -->
+          <article class="incident-card">
+            <div class="incident-date">June 2026</div>
+            <p class="incident-body">
+              An elderly man trips on a rough paving brick in James Street near the pharmacy. A bleeding head injury is observed and passers-by assist.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAPPED Framework Section -->
+    <section class="trapped-section">
+      <div class="section-container" style="padding-top: 60px; padding-bottom: 60px;">
+        <span class="section-badge center">THE FRAMEWORK</span>
+        <h2 class="section-title text-center" style="text-align: center; margin-bottom: 24px;">Breaking the Barriers to Community Access</h2>
+
+        <div class="trapped-intro" style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.6; max-width: var(--container-width-narrow); margin: 0 auto 48px;">
+          <p style="margin-bottom: 20px;">
+            Imagine planning a simple trip to the local shops, only to find you cannot get through the front door, use the toilet, or safely cross the street. For millions of people living with disability and ageing individuals, this is a daily reality.
+          </p>
+          <p>
+            The TRAPPED framework highlights seven critical physical barriers that determine whether a person can actively participate in society or is forced into isolation. True community access is not a luxury; it is a fundamental human right.
+          </p>
+        </div>
+
+        <div class="trapped-grid">
+          <!-- T -->
+          <div class="trapped-card">
+            <div class="trapped-badge">T</div>
+            <div class="trapped-info">
+              <h3>Toilets</h3>
+              <p>Accessible bathrooms ensure dignity, health, and the ability to stay out for longer than a few hours.</p>
             </div>
           </div>
-          
-          <!-- Right: Text Content -->
-          <div class="map-right-col">
-            <span class="section-badge">OUR MAP</span>
-            <h2 class="section-title">A community-built map of real accessibility.</h2>
-            <p class="section-desc">
-              Our Google My Map shows accessibility features, hazards and missing infrastructure across the Capricorn region, covering toilets, parking, pathways, and venues.
-            </p>
-            <div class="map-actions">
-              <a href="https://www.google.com/maps/d/viewer?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-map-external">
-                Open the Map
-                <!-- Inline External Link SVG -->
-                <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
+          <!-- R -->
+          <div class="trapped-card">
+            <div class="trapped-badge">R</div>
+            <div class="trapped-info">
+              <h3>Ramps</h3>
+              <p>Step-free entryways allow wheelchair users, mobility aid users, and parents with prams to enter safely.</p>
+            </div>
+          </div>
+          <!-- A -->
+          <div class="trapped-card">
+            <div class="trapped-badge">A</div>
+            <div class="trapped-info">
+              <h3>Accommodation</h3>
+              <p>Inclusive housing and public venues allow everyone to stay, visit, and live comfortably.</p>
+            </div>
+          </div>
+          <!-- P -->
+          <div class="trapped-card">
+            <div class="trapped-badge">P</div>
+            <div class="trapped-info">
+              <h3>Pathways</h3>
+              <p>Smooth, wide and clear walkways prevent trips, falls and forced detours into dangerous traffic.</p>
+            </div>
+          </div>
+          <!-- P -->
+          <div class="trapped-card">
+            <div class="trapped-badge">P</div>
+            <div class="trapped-info">
+              <h3>Parking</h3>
+              <p>Dedicated, wider spaces near entrances are vital for loading equipment and reducing painful transit distances.</p>
+            </div>
+          </div>
+          <!-- E -->
+          <div class="trapped-card">
+            <div class="trapped-badge">E</div>
+            <div class="trapped-info">
+              <h3>Elevators</h3>
+              <p>Reliable lifts bridge the gap between floors, opening up multi-level businesses, medical centres and transport hubs.</p>
+            </div>
+          </div>
+          <!-- D -->
+          <div class="trapped-card">
+            <div class="trapped-badge">D</div>
+            <div class="trapped-info">
+              <h3>Doors</h3>
+              <p>Automatic or lightweight doors ensure that entering a building does not require physical struggle or reliance on strangers.</p>
             </div>
           </div>
         </div>
 
+        <div class="trapped-outro" style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.6; max-width: var(--container-width-narrow); margin: 40px auto 0;">
+          <p>
+            When a community lacks these seven essentials, it effectively traps its most vulnerable citizens at home. By fixing these structural gaps, we transform public spaces from obstacle courses into welcoming environments. Ensuring universal access fosters independence, boosts local economies and builds a stronger, more connected community for everyone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Key Section -->
+    <section id="map-section" class="map-section">
+      <div class="section-container" style="padding-top: 60px;">
+
+        <div class="map-vertical-layout">
+          <span class="section-badge center">OUR MAP</span>
+          <h2 class="section-title text-center" style="text-align: center;">A community-built map of real accessibility.</h2>
+          <p class="section-desc text-center" style="text-align: center; max-width: var(--container-width-narrow); margin: 0 auto 32px;">
+            Our Google My Map shows accessibility features, hazards and missing infrastructure across the Capricornia region, covering toilets, parking, pathways and venues.
+          </p>
+
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48"
+              title="unTRAPPED Google My Map showing accessibility ratings in Yeppoon and Emu Park"
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div class="map-actions" style="margin-top: 32px; display: flex; justify-content: center; margin-bottom: 60px;">
+            <a href="https://www.google.com/maps/d/viewer?mid=1mOXyoupEm3Pc8QmL-Yvrxrqt9eIsG48" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-map-external">
+              Open the Map
+              <!-- Inline External Link SVG -->
+              <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </div>
+        </div>
+
         <!-- Clearly Labelled Symbols Key -->
-        <div class="symbols-key">
+        <div class="symbols-key" style="padding-top: 60px;">
           <span class="section-badge center">KEY</span>
           <h3 class="key-section-title">What the symbols mean</h3>
           <p class="key-section-subtitle">
             The live map utilizes these categories and symbols to document accessibility barriers and amenities:
           </p>
-          
+
           <div class="key-grid">
             <!-- 1. Toilets -->
             <div class="key-item">
-              <div class="key-circle circle-toilet">
-                <img src="assets/icon-toilet-v2.png" alt="Original Toilet Symbol" class="key-img-asset">
+              <div class="key-circle circle-toilet-new">
+                <img src="assets/icon-toilet-red.png" alt="" class="key-img-asset">
               </div>
               <h4>Toilets</h4>
-              <span class="key-status key-status-original">Original Symbol</span>
               <p>Accessible public toilets and amenities available.</p>
             </div>
-            
+
             <!-- 2. Disability Parking -->
             <div class="key-item">
-              <div class="key-circle circle-parking">
-                <img src="assets/icon-parking-v2.png" alt="Original Parking Symbol" class="key-img-asset">
+              <div class="key-circle circle-parking-new">
+                <img src="assets/icon-parking-v2.png" alt="" class="key-img-asset">
               </div>
               <h4>Disability Parking</h4>
-              <span class="key-status key-status-original">Original Symbol</span>
               <p>Designated parking spaces with safe side or rear access.</p>
             </div>
-            
-            <!-- 3. Pathways -->
+
+            <!-- 3. Accessible -->
             <div class="key-item">
-              <div class="key-circle circle-pathways">
-                <!-- Pathway SVG -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M4 19c3-1 6-2 10-2s7 1 10 2M4 12c3-1 6-2 10-2s7 1 10 2M4 5c3-1 6-2 10-2s7 1 10 2"/>
-                </svg>
+              <div class="key-circle circle-accessible-new">
+                <img src="assets/icon-accessible.png" alt="" class="key-img-asset">
               </div>
-              <h4>Pathways</h4>
-              <span class="key-status key-status-placeholder">Placeholder (Asset Pending)</span>
-              <p>Footpaths, beach accesses, shared paths and crossings.</p>
+              <h4>Accessible</h4>
+              <p>This represents a pathway or location recorded as accessible.</p>
             </div>
-            
-            <!-- 4. Venue Access -->
+
+            <!-- 4. At Your Own Risk -->
             <div class="key-item">
-              <div class="key-circle circle-venues">
-                <!-- Venue/Building Access SVG -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-                  <path d="M9 21V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12"></path>
-                </svg>
+              <div class="key-circle circle-risk-new">
+                <img src="assets/icon-at-your-own-risk.png" alt="" class="key-img-asset">
               </div>
-              <h4>Venue Access</h4>
-              <span class="key-status key-status-placeholder">Placeholder (Asset Pending)</span>
-              <p>Ramps, elevators, entrances and step-free venue entry.</p>
+              <h4>At Your Own Risk</h4>
+              <p>Locations or pathways with significant difficulty or warning flags.</p>
             </div>
-            
-            <!-- 5. Accessible Amenities -->
+
+            <!-- 5. Hazard / Missing -->
             <div class="key-item">
-              <div class="key-circle circle-amenities">
-                <!-- BBQ / Table SVG -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                </svg>
+              <div class="key-circle circle-hazard-new">
+                <img src="assets/icon-hazard-missing.png" alt="" class="key-img-asset">
               </div>
-              <h4>Accessible Amenities</h4>
-              <span class="key-status key-status-placeholder">Placeholder (Asset Pending)</span>
-              <p>Adapted picnic tables, BBQs, seating, and beach mats.</p>
-            </div>
-            
-            <!-- 6. Hazards / Missing -->
-            <div class="key-item">
-              <div class="key-circle circle-hazards">
-                <!-- Warning SVG -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
-                  <line x1="12" y1="9" x2="12" y2="13"></line>
-                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                </svg>
-              </div>
-              <h4>Hazards / Missing</h4>
-              <span class="key-status key-status-placeholder">Placeholder (Asset Pending)</span>
+              <h4>Hazard / Missing</h4>
               <p>Physical obstacles, falls risks, and missing infrastructure.</p>
             </div>
           </div>
@@ -262,7 +340,7 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Walking route to Toilet</span>
-          
+
         </div>
         <p class="location-desc">Enter the showgrounds through the gate, turn right and walk to a ramp, and you will find the toilet to your right.</p>
       </li>
@@ -297,7 +375,7 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">TOILET - disabled [BROKEN!!!]</span>
-          
+
         </div>
         <p class="location-desc">THIS TOILET IS OUT OF ORDER A public toilet adjacent to the bus stop that caters for wheelchairs. However, the space is slightly small for electric wheelchairs. Entrance is relatively narrow. Used by the public extensively so will not be cleanest....</p>
       </li>
@@ -346,14 +424,14 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">ACCESSIBILITY - [NO!]</span>
-          
+
         </div>
         <p class="location-desc">This pathway is inaccessible via any mobility device due to there being no cut-out on the gutter.</p>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">STAIRS TO REAR WHEELCHAIR ACCESS</span>
-          
+
         </div>
         <p class="location-desc">Alternative route: take wheelchair via the car park to the back side-entrance. If in a vehicle there is a loading bay for drop-off (but it is sometimes occupied)</p>
       </li>
@@ -540,7 +618,7 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">PATHWAY - acceptable</span>
-          
+
         </div>
         <p class="location-desc">Gradual gradient suitable for electric wheelchairs. Be cautious in wet weather as bricks may be slightly slippery.</p>
       </li>
@@ -554,7 +632,7 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">PATHWAY - [DANGEROUS]</span>
-          
+
         </div>
         <p class="location-desc">*DO NOT USE* No mobility device or mobility-challenged person should use this pathway! The path crosses the path of a steep ramp used by the Surf Life Saving Club for vehicles. The wheels of wheelchairs may unexpectedly turn towards the down ramp. The ramp is too steep for most electric wheelchairs to navigate.</p>
       </li>
@@ -596,7 +674,7 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">PATHWAY [STAIRS]</span>
-          
+
         </div>
         <p class="location-desc">Beach is only accessible via stairs.</p>
       </li>
@@ -631,7 +709,7 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">PATHWAY [RISK]</span>
-          
+
         </div>
         <p class="location-desc">This ramp to the toilets and pathways is very steep and may not be suitable for even mobility-scooters.</p>
       </li>
@@ -680,13 +758,13 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Point 28</span>
-          
+
         </div>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">PATHWAY [RISK]</span>
-          
+
         </div>
         <p class="location-desc">Too steep. Risk of wheelchair tipping or lacking power.</p>
       </li>
@@ -767,13 +845,13 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Point 8</span>
-          
+
         </div>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">ELEVATOR - [BROKEN]</span>
-          
+
         </div>
         <p class="location-desc">Although spoken about as a temporary closure, this elevator has been out of action for approximately 2-years. There is a ramp available as an alternative but is not universally accessible so *beware*</p>
       </li>
@@ -815,7 +893,7 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">VENUE - pool free</span>
-          
+
         </div>
         <p class="location-desc">Has gentle walk-in to pool. Also has a wheelchair friendly pool entry with railing. NOTE: There is a mobility chair available for use for free ASK THE LIFE GUARDS! ALSO: charging for mobility scooters also available.</p>
       </li>
@@ -833,61 +911,61 @@
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">FINISH</span>
-          
+
         </div>
         <p class="location-desc">Finish at Ocean Brew for LUNCH</p>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">START</span>
-          
+
         </div>
         <p class="location-desc">Public pool: 1. Entrance 2. Hoist 3. All-Abilities Room (A Change Place) 4. Car park</p>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Toilets</span>
-          
+
         </div>
         <p class="location-desc">Proposed location OF NEW DISABILITY TOILET?</p>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Toilet</span>
-          
+
         </div>
         <p class="location-desc">Potential conversion into a disability toilet</p>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Tables, chairs, BBQ</span>
-          
+
         </div>
         <p class="location-desc">1. BBQ for wheelchair 2. Tables for wheelchair 3. Tables and seating for aged</p>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Pathway</span>
-          
+
         </div>
         <p class="location-desc">How suitable is the grass surface for wheelie-walkers and falls-risks persons?</p>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Beach Mat</span>
-          
+
         </div>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">All-Abilities Room (proposed)</span>
-          
+
         </div>
       </li>
       <li class="location-item">
         <div class="location-header">
           <span class="location-name">Chevrons (proposed)</span>
-          
+
         </div>
       </li>
     </ul>
@@ -905,7 +983,7 @@
         <span class="section-badge center">WHAT WE'VE FOUND</span>
         <h2 class="stats-section-title">The gaps are real — and they affect real lives.</h2>
         <p class="stats-section-subtitle">Real metrics compiled from Michael Page's KML map audits across Yeppoon and Emu Park:</p>
-        
+
         <div class="stats-grid">
           <!-- 1. Total Audited -->
           <div class="stats-card">
@@ -913,28 +991,28 @@
             <div class="stats-label">Locations Audited</div>
             <p class="stats-desc">Total on-ground locations checked and logged in the region.</p>
           </div>
-          
+
           <!-- 2. Excellent -->
           <div class="stats-card">
             <div class="stats-number">24</div>
             <div class="stats-label">Excellent Access</div>
             <p class="stats-desc">Positive exemplars showing fully accessible and compliant facilities.</p>
           </div>
-          
+
           <!-- 3. Toilets -->
           <div class="stats-card">
             <div class="stats-number">23</div>
             <div class="stats-label">Audited Toilets</div>
             <p class="stats-desc">Public facilities audited for locks, support rails, and space width.</p>
           </div>
-          
+
           <!-- 4. Pathways -->
           <div class="stats-card">
             <div class="stats-number">26</div>
             <div class="stats-label">Audited Pathways</div>
             <p class="stats-desc">Pedestrian walkways and beach accesses audited for safety hazards.</p>
           </div>
-          
+
           <!-- 5. Disability Parking -->
           <div class="stats-card">
             <div class="stats-number">16</div>
@@ -1001,7 +1079,7 @@
       <div class="section-container">
         <span class="section-badge">WHO'S BEHIND THIS</span>
         <h2 class="bio-section-title">Built by locals. Backed by community.</h2>
-        
+
         <div class="bio-grid">
           <!-- Left: Bio Text -->
           <div class="bio-content-col">
@@ -1018,35 +1096,35 @@
               <a href="#report-section" class="btn btn-secondary">Contact the Campaign</a>
             </div>
           </div>
-          
+
           <!-- Right: Circular Images Grid -->
           <div class="bio-images-col">
             <div class="bio-avatar-grid">
-              
+
               <!-- 1. Lived Experience -->
               <div class="bio-avatar-item">
                 <img src="assets/bio-lived-experience.png" alt="Wheelchair user looking at the ocean" class="bio-avatar-img">
                 <span class="bio-avatar-label">People with lived experience</span>
               </div>
-              
+
               <!-- 2. Volunteers -->
               <div class="bio-avatar-item">
                 <img src="assets/bio-volunteers.png" alt="Two advocates in safety vests on a pathway" class="bio-avatar-img">
                 <span class="bio-avatar-label">Local volunteers & advocates</span>
               </div>
-              
+
               <!-- 3. Region -->
               <div class="bio-avatar-item">
                 <img src="assets/bio-capricorn-coast.png" alt="Aerial view of Capricorn coastline" class="bio-avatar-img">
                 <span class="bio-avatar-label">Capricorn region communities</span>
               </div>
-              
+
               <!-- 4. Together -->
               <div class="bio-avatar-item">
                 <img src="assets/bio-collaboration.png" alt="Hands joined together in unity" class="bio-avatar-img">
                 <span class="bio-avatar-label">Stronger together for change</span>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -1100,7 +1178,7 @@
   <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-container">
-      
+
       <!-- Footer Top Row -->
       <div class="footer-top-row">
         <div class="footer-logo-col">
@@ -1129,10 +1207,10 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Footer Divider -->
       <div class="footer-divider"></div>
-      
+
       <!-- Footer Bottom Row -->
       <div class="footer-bottom-row">
         <div class="acknowledgement-box">
@@ -1149,7 +1227,7 @@
           </p>
         </div>
       </div>
-      
+
     </div>
   </footer>
 
