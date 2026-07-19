@@ -151,15 +151,18 @@ h1, h2, h3, h4, blockquote p {
 .header-container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 12px 24px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 12px;
 }
 
 .logo-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
 }
 
 .logo {
@@ -183,7 +186,7 @@ h1, h2, h3, h4, blockquote p {
   font-weight: 800;
   color: var(--text-muted);
   letter-spacing: 2.5px;
-  margin-top: -2px;
+  margin-top: 0;
 }
 
 .main-nav ul {
@@ -277,9 +280,14 @@ h1, h2, h3, h4, blockquote p {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: 36px;
   line-height: 1.5;
+  background-color: rgba(253, 253, 251, 0.92);
+  padding: 14px 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--brand-teal);
+  box-shadow: 0 4px 15px rgba(43, 80, 76, 0.03);
 }
 
 .hero-actions {
@@ -710,6 +718,16 @@ h1, h2, h3, h4, blockquote p {
   border-bottom: var(--border-thin);
 }
 
+.findings-section .section-header {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .findings-section .section-header {
+    margin-bottom: 32px;
+  }
+}
+
 .findings-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1038,6 +1056,25 @@ h1, h2, h3, h4, blockquote p {
     font-size: 15px;
   }
 
+  .header-container {
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .main-nav ul {
+    gap: 8px 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-nav a {
+    font-size: 0.85rem;
+  }
+
+  .main-nav .nav-cta {
+    padding: 6px 12px;
+  }
+
   .hero-container {
     margin-left: 0;
     padding: 60px 24px;
@@ -1079,6 +1116,19 @@ h1, h2, h3, h4, blockquote p {
 }
 
 @media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .logo-tagline {
+    font-size: 0.52rem;
+    letter-spacing: 1.5px;
+  }
+
+  .logo-wrapper {
+    gap: 8px;
+  }
+
   .hero-title {
     font-size: 2.3rem;
   }

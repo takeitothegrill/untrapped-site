@@ -37,8 +37,9 @@ This repository contains the campaign website for **unTRAPPED** (visually brande
 - `/assets/` - Renamed and cleaned branding images and audited photos.
 - `index.html` - Main landing page and KML-parsed accessible location accordions.
 - `about.html` - Dedicated page detailing Michael's advocacy background, credentials, and group associations.
-- `research.html` - Dedicated page for research papers and future statistics (currently a "Coming Soon" placeholder).
+- `research.html` - Dedicated page detailing the Livingstone NDIS and age statistics data story.
 - `style.css` - Custom, high-contrast typography and responsive layouts.
+- `research.css` - Scoped stylesheet for isolation of the Livingstone data story visual elements.
 - `script.js` - Minimal print utility and anchor-focus enhancement.
 
 ---

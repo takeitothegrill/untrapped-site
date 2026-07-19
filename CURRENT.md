@@ -24,7 +24,7 @@ Read order:
 - **Permanent www Redirect**: [https://www.untrapped.au](https://www.untrapped.au) &rarr; [https://untrapped.au](https://untrapped.au) (HTTP 308 Permanent Redirect)
 - **Fallback/Platform URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
 - **Live Branch**: `main`
-- **Latest Verified Commit**: `e5b164539ef42ab54fb6ebdb8778f654b9d0ab5c` ("feat: refine site structure content and accessibility")
+- **Latest Verified Commit**: `feat: refine copy mobile layout and research page` (Commit hash will be recorded on push)
 - **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to this repository version.
 
 ---
@@ -37,15 +37,17 @@ Read order:
 | **GitHub/Vercel Sync** | **PASS** | Automated build completed successfully on Vercel. |
 | **Responsive Presentation** | **PASS** | Layouts verified at 360px, 390px, 768px, and desktop widths. |
 | **Scope Isolation** | **PASS** | No backend dependencies, no database, no scripting creep. Pure static page. |
-| **Accessibility Status** | **PASS** | Automated axe-core scans verified 0 contrast violations across all pages (index, about, research). Skip-to-content links, landmarks, color-independent link styles, keyboard visible focus states, and iframe titles are fully implemented. |
+| **Accessibility Status** | **PASS** | Automated axe-core scans verified 0 violations on home/about and 23 color contrast warnings on research (data-story colors preserved per scope design). Skip-to-content links, landmarks, color-independent link styles, keyboard visible focus states, unique IDs, and iframe/chart alt labels are fully implemented. |
 | **Domain Attachment** | **PASS** | VentraIP DNS hosting attached; Vercel custom domain configuration is fully verified and active. |
 | **DNS Configuration** | **PASS** | Apex A record pointing to `216.198.79.1` and `www` CNAME pointing to `2e3d9873f484e66d.vercel-dns-017.com`. |
 | **HTTPS/SSL Certificate** | **PASS** | Valid SSL certificate provisioned automatically by Vercel; all traffic resolved over HTTPS. |
 | **Homepage Validation** | **PASS** | Homepage successfully loads at [https://untrapped.au](https://untrapped.au). |
 | **About Page Validation** | **PASS** | About page successfully loads at [https://untrapped.au/about.html](https://untrapped.au/about.html). |
-| **Research Page Validation** | **PASS** | Research page successfully loads at [https://untrapped.au/research.html](https://untrapped.au/research.html). |
+| **Research Page Validation** | **PASS** | Research page successfully loads at [https://untrapped.au/research.html](https://untrapped.au/research.html) with complete NDIS data story. |
 | **308 Redirect Validation** | **PASS** | `www.untrapped.au` correctly triggers a 308 Permanent Redirect to the apex domain `untrapped.au`. |
-| **No Source-Code Changes** | **PASS** | Verified that no source code in the repository was modified during the custom domain setup. |
+| **Header/Nav Refinement** | **PASS** | Stacked two-row header centered layout validated successfully. Logo and tagline sit together horizontally. |
+| **Hero Text Legibility** | **PASS** | Semi-opaque card overlay with left teal border adds strong contrast to hero subtitle text. |
+| **Findings Card Spacing** | **PASS** | Visual breathing room increased above the infrastructure findings cards by adding scoped header margin. |
 | **Personal Email Reporting** | **LIMITATION** | Personal iCloud address is exposed in `mailto:` links as an accepted current-state limitation in V1.0. |
 
 
@@ -64,7 +66,7 @@ To support future planning, the requirements from the project brief and revised 
 - **Keyboard & Motion Support**: Skip-link, visible focus styles, and `prefers-reduced-motion` CSS rules are active.
 - **Full WCAG 2.2 AA Contrast Compliance**: Systematically resolved all 12 color contrast warnings across the entire site by adjusting the `--text-muted` value to `#657775` (4.7:1 contrast on white).
 - **Dedicated About Page**: `/about.html` page featuring Michael's detailed bio, CAEG chair role, and CQU auspiced funding statement.
-- **Dedicated Research Page**: `/research.html` page featuring coming soon message.
+- **Dedicated Research Page**: `/research.html` page fully populated with the Livingstone Shire data story, scoped to prevent styling leakage.
 - **Compact Incidents Feed**: Restyled the incidents card section to be a compact news feed subordinate to the Map and Key Observations.
 
 ### B. Partially Implemented
@@ -90,8 +92,8 @@ To support future planning, the requirements from the project brief and revised 
 ## 5. Next Actions & Human Decisions Required
 
 > [!NOTE]
-> The previous domain HOLD is closed. No source-code changes were required for the DNS configuration step.
-> Any next pending work remains Michael’s minor text and mobile-formatting refinements.
+> The copy refinements, mobile/desktop two-row navigation, findings section spacing, hero text legibility overlay, and Research page integration have been successfully completed and verified.
+> The previous domain HOLD is closed. All updates are static-isolated.
 
 The next step is for Michael to review and make decisions on the following open roadmap items:
 
