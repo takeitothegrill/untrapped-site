@@ -24,8 +24,9 @@ Read order:
 - **Permanent www Redirect**: [https://www.untrapped.au](https://www.untrapped.au) &rarr; [https://untrapped.au](https://untrapped.au) (HTTP 308 Permanent Redirect)
 - **Fallback/Platform URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
 - **Live Branch**: `main`
-- **Latest Verified Commit**: `feat: refine copy mobile layout and research page` (Commit hash will be recorded on push)
-- **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to this repository version.
+- **Latest Verified Commit**: `022d07935f96e9f899a8f54173177026b4c863cc` ("feat: refine copy mobile layout and research page")
+- **Production Deployment ID**: `dpl_6VisQTNd1tQNaJc3rAS3jurGTk56`
+- **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to commit `022d07935f96e9f899a8f54173177026b4c863cc` deployed manually.
 
 ---
 
@@ -34,10 +35,10 @@ Read order:
 | Check | Status | Verification Detail |
 |---|---|---|
 | **Production URL Active** | **PASS** | Live site verified in incognito browser and by agent request. |
-| **GitHub/Vercel Sync** | **PASS** | Automated build completed successfully on Vercel. |
+| **GitHub/Vercel Sync** | **BYPASS** | Pushing to GitHub does not trigger automatic Vercel builds due to lack of repository integration. Production is manually triggered via Vercel CLI. |
 | **Responsive Presentation** | **PASS** | Layouts verified at 360px, 390px, 768px, and desktop widths. |
 | **Scope Isolation** | **PASS** | No backend dependencies, no database, no scripting creep. Pure static page. |
-| **Accessibility Status** | **PASS** | Automated axe-core scans verified 0 violations on home/about and 23 color contrast warnings on research (data-story colors preserved per scope design). Skip-to-content links, landmarks, color-independent link styles, keyboard visible focus states, unique IDs, and iframe/chart alt labels are fully implemented. |
+| **Accessibility Status** | **PASS** | Automated axe-core scans verified 0 violations on homepage and about page. Research page contains 23 known color-contrast findings retained from the approved visual design story (does not claim full WCAG 2.2 AA contrast compliance). Skip-to-content links, landmarks, color-independent link styles, keyboard visible focus, unique IDs, and chart alt labels are fully implemented. |
 | **Domain Attachment** | **PASS** | VentraIP DNS hosting attached; Vercel custom domain configuration is fully verified and active. |
 | **DNS Configuration** | **PASS** | Apex A record pointing to `216.198.79.1` and `www` CNAME pointing to `2e3d9873f484e66d.vercel-dns-017.com`. |
 | **HTTPS/SSL Certificate** | **PASS** | Valid SSL certificate provisioned automatically by Vercel; all traffic resolved over HTTPS. |
@@ -48,6 +49,9 @@ Read order:
 | **Header/Nav Refinement** | **PASS** | Stacked two-row header centered layout validated successfully. Logo and tagline sit together horizontally. |
 | **Hero Text Legibility** | **PASS** | Semi-opaque card overlay with left teal border adds strong contrast to hero subtitle text. |
 | **Findings Card Spacing** | **PASS** | Visual breathing room increased above the infrastructure findings cards by adding scoped header margin. |
+| **Deployment Discrepancy** | **RESOLVED** | Identified and corrected Vercel automatic-trigger omission by manually running `npx vercel --prod --yes` for deployment `dpl_6VisQTNd1tQNaJc3rAS3jurGTk56`. |
+| **Raw-HTML Verification** | **PASS** | Checked live pages via `curl.exe` with a 10s timeout to confirm exact copy strings and research story exist in production. |
+| **Human Visual Acceptance** | **PASS** | Michael's manual visual review on desktop and mobile successfully accepted. |
 | **Personal Email Reporting** | **LIMITATION** | Personal iCloud address is exposed in `mailto:` links as an accepted current-state limitation in V1.0. |
 
 

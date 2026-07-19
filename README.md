@@ -88,21 +88,25 @@ Vercel will ask:
 5. *In which directory is your code located?* **./**
 6. *Want to modify these settings?* **No**
 
-This will deploy a preview URL. To deploy to production:
+To deploy to production (Note: GitHub push does *not* automatically deploy to Vercel, so all production updates must be deployed manually from the local repository):
 ```bash
-npx vercel --prod
+npx vercel --prod --yes
 ```
 
 ---
 
 ## Production Domain & Deployment
 
-The static website is deployed to Vercel with the following domain configuration:
+The static website is deployed to Vercel with the following domain and deployment configuration:
 
+- **Deployment Model**: GitHub stores the canonical source. Pushing to `origin/main` does **not** trigger an automatic Vercel deployment. Production deployment must be manually triggered from the intended local repository state using:
+  ```bash
+  npx vercel --prod --yes
+  ```
 - **Canonical Public Domain**: [https://untrapped.au](https://untrapped.au)
 - **www Redirect**: [https://www.untrapped.au](https://www.untrapped.au) redirects to `untrapped.au` (apex domain).
 - **HTTPS/SSL**: Vercel manages HTTPS certificates automatically.
-- **Fallback/Platform URL**: [https://untrapped-site.vercel.app](https://untrapped-site.vercel.app) remains operational as a fallback/platform address.
+- **Fallback/Platform URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/) remains operational as a fallback/platform address.
 
 ---
 
