@@ -1,8 +1,28 @@
-# unTRAPPED Campaign Website (V1)
+# (un)TRAPPED Campaign Website (untrapped-site)
 
-This repository contains the V1 campaign website for **unTRAPPED** (visually branded as **(un)TRAPPED**), a disability-access advocacy initiative covering the Capricorn region of Central Queensland (including Yeppoon and Emu Park).
+> [!IMPORTANT]
+> **CRITICAL PROJECT IDENTITY INVARIANT**
+> There are two separate projects under the unTRAPPED banner that must never be confused:
+> 1. **`untrapped-site`** (This Project / Repository): The current public-facing advocacy and static campaign website. It wraps around an existing public Google My Map, provides an accessible HTML alternative, and is deployed via Vercel.
+> 2. **`untrapped`** (Dormant Project): A separate, dormant future custom web application and backend concept intended for a later custom mapping phase.
+>
+> These two projects must not be merged, renamed, substituted, or treated as the same project. Do not use "untrapped" as shorthand for `untrapped-site` where it could create ambiguity.
 
-The website acts as a campaign platform built around the existing public Google My Map, providing a responsive, high-contrast, and fully accessible directory of all 97 audited locations.
+---
+
+## Document Architecture & Read Order
+
+This repository uses a three-document structure to organize campaign charter, implementation guides, and deployment states. Please read them in this order:
+
+1. **`ABOUT.md`**: Stable project charter. It describes why the campaign exists, target regions, credentials, core campaign principles, and future roadmap aspirations.
+2. **`README.md`** (This Document): Technical repository guide. It describes what is currently implemented, file and folder structure, local development, and Vercel deployment.
+3. **`CURRENT.md`**: Living verified state. It records the active production URL, verified deployment status, known quality limitations, and concrete classifications of roadmap candidates.
+
+---
+
+## What is Currently Implemented
+
+This repository contains the campaign website for **unTRAPPED** (visually branded as **(un)TRAPPED**). The website acts as a campaign platform built around the existing public Google My Map, providing a responsive, high-contrast, and keyboard-navigable directory of audited locations.
 
 ## Governing Principles
 
