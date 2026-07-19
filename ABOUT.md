@@ -59,7 +59,7 @@ People with mobility disabilities face daily structural barriers that trap them 
 - **Single Page Architecture**: A light, fast, scrolling static page using plain HTML, CSS, and minimal JS.
 - **No Heavy Frameworks or Backend**: No database, no custom API backend, no custom map engines, and no user accounts.
 - **Vercel Deployments**: Maintained on Michael Page's personal Vercel account.
-- **Domain Name**: Deployed to `untrapped-site.vercel.app` with future transition to `untrapped.au`.
+- **Domain Name**: Deployed to `untrapped.au` (canonical domain) with `untrapped-site.vercel.app` as a fallback.
 
 ---
 
@@ -70,7 +70,6 @@ The following requirements and proposals were identified during initial requirem
 *   **Whole Capricorn Region Map Integration**: Expanding the map audits to fully cover Rockhampton (current live map and HTML alternative only cover Yeppoon and Emu Park).
 *   **Google Form Community Reporting**: Embedding a direct Google Form that populates a dedicated spreadsheet for hazard submissions (the current site uses a simple `mailto:` link).
 *   **Dedicated Public Campaign Email**: Using a dedicated email address (e.g., `untrapped.capricorn@gmail.com` or `hello@untrapped.au` forwarding) rather than exposing Michael's personal iCloud address.
-*   **Domain Migration to `untrapped.au`**: Attaching the registered `untrapped.au` domain to Vercel (currently in progress).
 *   **Regional & Heritage Imagery**: Displaying Rockhampton heritage buildings, beef-cattle imagery, and coastal Great Keppel Island (GKI) imagery to ground the visual design in Central Queensland.
 *   **Full WCAG 2.2 AA Compliance**: We have resolved all 12 known contrast warnings using automated testing, but full verification of all WCAG 2.2 AA guidelines (including manual screen reader testing) remains a future validation goal.
 *   **Google My Map Account Ownership Plan**: Establishing a long-term plan for the map data published under Louise Page's Google account to ensure embed continuity.

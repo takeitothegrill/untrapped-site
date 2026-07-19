@@ -94,21 +94,14 @@ npx vercel --prod
 
 ---
 
-## Attaching the `untrapped.au` Domain
+## Production Domain & Deployment
 
-Once the project is deployed to Vercel:
+The static website is deployed to Vercel with the following domain configuration:
 
-1. Go to the **Vercel Dashboard** -> Select **untrapped-site** -> **Settings** -> **Domains**.
-2. Add `untrapped.au` and `www.untrapped.au`.
-3. Vercel will provide DNS records. Update your domain registrar with:
-   - For `untrapped.au` (Apex domain):
-     - **Type**: A Record
-     - **Name**: `@`
-     - **Value**: `76.76.21.21`
-   - For `www.untrapped.au` (Subdomain):
-     - **Type**: CNAME
-     - **Name**: `www`
-     - **Value**: `cname.vercel-dns.com.`
+- **Canonical Public Domain**: [https://untrapped.au](https://untrapped.au)
+- **www Redirect**: [https://www.untrapped.au](https://www.untrapped.au) redirects to `untrapped.au` (apex domain).
+- **HTTPS/SSL**: Vercel manages HTTPS certificates automatically.
+- **Fallback/Platform URL**: [https://untrapped-site.vercel.app](https://untrapped-site.vercel.app) remains operational as a fallback/platform address.
 
 ---
 

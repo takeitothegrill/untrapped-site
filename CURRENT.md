@@ -20,8 +20,9 @@ Read order:
 
 ## 2. Production Status
 
-- **Live Production URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
-- **Live Custom Domain**: `HOLD — EXTERNAL OWNER ACTION REQUIRED` (Added to Vercel project configuration; pending DNS updates on VentraIP by Michael Page)
+- **Canonical Production URL**: [https://untrapped.au](https://untrapped.au)
+- **Permanent www Redirect**: [https://www.untrapped.au](https://www.untrapped.au) &rarr; [https://untrapped.au](https://untrapped.au) (HTTP 308 Permanent Redirect)
+- **Fallback/Platform URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
 - **Live Branch**: `main`
 - **Latest Verified Commit**: `e5b164539ef42ab54fb6ebdb8778f654b9d0ab5c` ("feat: refine site structure content and accessibility")
 - **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to this repository version.
@@ -37,8 +38,16 @@ Read order:
 | **Responsive Presentation** | **PASS** | Layouts verified at 360px, 390px, 768px, and desktop widths. |
 | **Scope Isolation** | **PASS** | No backend dependencies, no database, no scripting creep. Pure static page. |
 | **Accessibility Status** | **PASS** | Automated axe-core scans verified 0 contrast violations across all pages (index, about, research). Skip-to-content links, landmarks, color-independent link styles, keyboard visible focus states, and iframe titles are fully implemented. |
-| **Custom Domain Resolution** | **HOLD** | Added `untrapped.au` and `www.untrapped.au` on Vercel; pending registrar DNS A and CNAME record updates. |
+| **Domain Attachment** | **PASS** | VentraIP DNS hosting attached; Vercel custom domain configuration is fully verified and active. |
+| **DNS Configuration** | **PASS** | Apex A record pointing to `216.198.79.1` and `www` CNAME pointing to `2e3d9873f484e66d.vercel-dns-017.com`. |
+| **HTTPS/SSL Certificate** | **PASS** | Valid SSL certificate provisioned automatically by Vercel; all traffic resolved over HTTPS. |
+| **Homepage Validation** | **PASS** | Homepage successfully loads at [https://untrapped.au](https://untrapped.au). |
+| **About Page Validation** | **PASS** | About page successfully loads at [https://untrapped.au/about.html](https://untrapped.au/about.html). |
+| **Research Page Validation** | **PASS** | Research page successfully loads at [https://untrapped.au/research.html](https://untrapped.au/research.html). |
+| **308 Redirect Validation** | **PASS** | `www.untrapped.au` correctly triggers a 308 Permanent Redirect to the apex domain `untrapped.au`. |
+| **No Source-Code Changes** | **PASS** | Verified that no source code in the repository was modified during the custom domain setup. |
 | **Personal Email Reporting** | **LIMITATION** | Personal iCloud address is exposed in `mailto:` links as an accepted current-state limitation in V1.0. |
+
 
 ---
 
@@ -80,22 +89,17 @@ To support future planning, the requirements from the project brief and revised 
 
 ## 5. Next Actions & Human Decisions Required
 
+> [!NOTE]
+> The previous domain HOLD is closed. No source-code changes were required for the DNS configuration step.
+> Any next pending work remains Michael’s minor text and mobile-formatting refinements.
+
 The next step is for Michael to review and make decisions on the following open roadmap items:
 
 ### Requires Human Decision
-1. **Dedicated Campaign Contact Email**: Michael to decide whether to create a dedicated Gmail (e.g., `untrapped.capricorn@gmail.com`) or wait to set up `hello@untrapped.au` via VentraIP email forwarding once the domain is attached.
+1. **Dedicated Campaign Contact Email**: Michael to decide whether to create a dedicated Gmail (e.g., `untrapped.capricorn@gmail.com`) or set up `hello@untrapped.au` via VentraIP email forwarding now that the domain is attached.
 2. **Hazard Reporting Forms**: Decide whether to implement the CAEG complaint escalation link alongside or instead of a Google Form.
 3. **Rockhampton Audits**: Align on a timeline for the on-ground audit of Rockhampton CBD and heritage areas.
 
 ### Requires External Dependency or Ownership Action
-1. **Domain Acquisition & Attachment (HOLD — EXTERNAL OWNER ACTION REQUIRED)**: Michael must update the DNS settings on his registrar (VentraIP) using the following records:
-   - For `untrapped.au` (Apex domain):
-     - **Type**: A Record
-     - **Name**: `@` (or blank)
-     - **Value**: `76.76.21.21`
-   - For `www.untrapped.au` (Subdomain):
-     - **Type**: CNAME
-     - **Name**: `www`
-     - **Value**: `cname.vercel-dns.com.`
-2. **Google My Map Account continuity**: Confirm ownership or editing access plan for Louise Page's Google account to ensure the map embed remains public and editable.
-3. **Consent for Identifiable Photographs**: Michael must explicitly verify consent from any recognizable individuals in photos prior to uploading assets.
+1. **Google My Map Account continuity**: Confirm ownership or editing access plan for Louise Page's Google account to ensure the map embed remains public and editable.
+2. **Consent for Identifiable Photographs**: Michael must explicitly verify consent from any recognizable individuals in photos prior to uploading assets.
