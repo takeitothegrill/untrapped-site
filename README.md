@@ -36,6 +36,8 @@ This repository contains the campaign website for **unTRAPPED** (visually brande
 
 - `/assets/` - Renamed and cleaned branding images and audited photos.
 - `index.html` - Main landing page and KML-parsed accessible location accordions.
+- `about.html` - Dedicated page detailing Michael's advocacy background, credentials, and group associations.
+- `research.html` - Dedicated page for research papers and future statistics (currently a "Coming Soon" placeholder).
 - `style.css` - Custom, high-contrast typography and responsive layouts.
 - `script.js` - Minimal print utility and anchor-focus enhancement.
 

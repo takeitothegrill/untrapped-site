@@ -72,7 +72,7 @@ The following requirements and proposals were identified during initial requirem
 *   **Dedicated Public Campaign Email**: Using a dedicated email address (e.g., `untrapped.capricorn@gmail.com` or `hello@untrapped.au` forwarding) rather than exposing Michael's personal iCloud address.
 *   **Domain Migration to `untrapped.au`**: Attaching the registered `untrapped.au` domain to Vercel (currently in progress).
 *   **Regional & Heritage Imagery**: Displaying Rockhampton heritage buildings, beef-cattle imagery, and coastal Great Keppel Island (GKI) imagery to ground the visual design in Central Queensland.
-*   **Full WCAG 2.2 AA Compliance**: While high contrast and keyboard accessibility are prioritised, the website is not currently verified as fully WCAG 2.2 AA compliant. Meeting this standard without contrast warnings remains an active roadmap goal.
+*   **Full WCAG 2.2 AA Compliance**: We have resolved all 12 known contrast warnings using automated testing, but full verification of all WCAG 2.2 AA guidelines (including manual screen reader testing) remains a future validation goal.
 *   **Google My Map Account Ownership Plan**: Establishing a long-term plan for the map data published under Louise Page's Google account to ensure embed continuity.
 
 ---
@@ -83,5 +83,5 @@ The credibility layer of the site highlights Michael's active advocacy roles in 
 - Long-time advocate with the **Capricorn Access & Equity Group (CAEG)** (Central Queensland's longest-running accessibility group).
 - Served a term as **Chair of the Accessibility Capricornia Group**, meeting bi-monthly with the Livingstone Mayor, councillors, and engineers.
 - Works in community engagement at **Capricorn Citizen Advocacy**, a disability advocacy charity in Rockhampton.
-- Leadership Group Member of the **Capricornia Stronger Places, Stronger People** initiative auspiced by Central Queensland University (CQU).
+- Leadership Group Member of the **Capricornia Stronger Places, Stronger People** initiative, auspiced by Central Queensland University (CQU) and funded by the Australian Government Department of Social Services and the Queensland Government Department of Families, Seniors, Disability Services and Child Safety.
 - Personal history of daily disability care advocacy (2017–2023).

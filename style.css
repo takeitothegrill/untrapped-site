@@ -13,7 +13,7 @@
   --bg-card: #ffffff;          /* Pure white for cards */
   --text-primary: #1a2e2c;     /* Deep charcoal with a touch of dark green */
   --text-secondary: #4a5c5a;   /* Slate gray for secondary text */
-  --text-muted: #708280;
+  --text-muted: #657775;
 
   /* Brand Colors */
   --brand-forest: #2b504c;     /* Primary Dark Forest Green */
@@ -82,6 +82,18 @@ body {
 
 .skip-link:focus {
   top: 0;
+}
+
+.inline-link {
+  color: var(--brand-blue);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover,
+.inline-link:focus {
+  color: var(--brand-forest-hover);
 }
 
 /* --- Typography Helpers --- */
@@ -1095,19 +1107,28 @@ h1, h2, h3, h4, blockquote p {
   border-bottom: var(--border-thin);
 }
 
+.incidents-section .section-container {
+  padding: 48px 24px;
+}
+
+.incidents-section .section-title {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
 .incidents-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
 }
 
 .incident-card {
   background-color: var(--bg-card);
   border: var(--border-thin);
-  border-left: 6px solid var(--brand-red);
+  border-left: 4px solid var(--brand-red);
   border-radius: var(--border-radius-card);
-  padding: 36px 30px;
-  box-shadow: var(--card-shadow);
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(43, 80, 76, 0.03);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   overflow: hidden;
@@ -1117,22 +1138,22 @@ h1, h2, h3, h4, blockquote p {
 }
 
 .incident-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(43, 80, 76, 0.06);
 }
 
 .incident-date {
   font-family: Georgia, serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: var(--brand-red);
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .incident-body {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* TRAPPED Section */

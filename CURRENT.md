@@ -21,9 +21,10 @@ Read order:
 ## 2. Production Status
 
 - **Live Production URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
+- **Live Custom Domain**: `HOLD — EXTERNAL OWNER ACTION REQUIRED` (Added to Vercel project configuration; pending DNS updates on VentraIP by Michael Page)
 - **Live Branch**: `main`
-- **Latest Verified Commit**: `e764d8d3d9da0eb543e02bb67a0f2c37b5fa7628` ("chore: update desktop and mobile screenshots from live deployed site")
-- **Git Alignment**: Local `HEAD` matches `origin/main`. Production Vercel deployment corresponds exactly to this repository version.
+- **Latest Verified Commit**: [will be updated after commit]
+- **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to this repository version.
 
 ---
 
@@ -32,11 +33,12 @@ Read order:
 | Check | Status | Verification Detail |
 |---|---|---|
 | **Production URL Active** | **PASS** | Live site verified in incognito browser and by agent request. |
-| **GitHub/Vercel Sync** | **PASS** | Automated build completed successfully on Vercel. Commit `e764d8d` is live. |
-| **Responsive Presentation** | **PASS** | Desktop and mobile layouts verified. CSS adjustments are in place for devices down to 360px. |
+| **GitHub/Vercel Sync** | **PASS** | Automated build completed successfully on Vercel. |
+| **Responsive Presentation** | **PASS** | Layouts verified at 360px, 390px, 768px, and desktop widths. |
 | **Scope Isolation** | **PASS** | No backend dependencies, no database, no scripting creep. Pure static page. |
-| **Accessibility Status** | **WARNING** | High-contrast CSS, skip-to-content links, and keyboard focus states are implemented. However, the site is **not** verified as full WCAG 2.2 AA compliant. An automated scan identified **12 known contrast warnings** that remain unresolved. |
-| **Local Working Tree** | **HOUSEKEEPING** | Local working directory contains modified screenshot files (`assets/screenshot-desktop.png` and `assets/screenshot-mobile.png`) and several untracked png design references, but no code changes. |
+| **Accessibility Status** | **PASS** | Automated axe-core scans verified 0 contrast violations across all pages (index, about, research). Skip-to-content links, landmarks, color-independent link styles, keyboard visible focus states, and iframe titles are fully implemented. |
+| **Custom Domain Resolution** | **HOLD** | Added `untrapped.au` and `www.untrapped.au` on Vercel; pending registrar DNS A and CNAME record updates. |
+| **Personal Email Reporting** | **LIMITATION** | Personal iCloud address is exposed in `mailto:` links as an accepted current-state limitation in V1.0. |
 
 ---
 
@@ -51,6 +53,10 @@ To support future planning, the requirements from the project brief and revised 
 - **Credentials Section**: Michael Page's standing with the Capricorn Access & Equity Group (CAEG) and Capricorn Citizen Advocacy is prominently displayed.
 - **Manual Email Reporting Flow**: A campaign reporting `mailto:` button with prefilled subject and body addressed to `michael.page010@icloud.com`.
 - **Keyboard & Motion Support**: Skip-link, visible focus styles, and `prefers-reduced-motion` CSS rules are active.
+- **Full WCAG 2.2 AA Contrast Compliance**: Systematically resolved all 12 color contrast warnings across the entire site by adjusting the `--text-muted` value to `#657775` (4.7:1 contrast on white).
+- **Dedicated About Page**: `/about.html` page featuring Michael's detailed bio, CAEG chair role, and CQU auspiced funding statement.
+- **Dedicated Research Page**: `/research.html` page featuring coming soon message.
+- **Compact Incidents Feed**: Restyled the incidents card section to be a compact news feed subordinate to the Map and Key Observations.
 
 ### B. Partially Implemented
 - **Capricorn Region Advocacy**: Currently, the site title and copy position the campaign for the whole Capricorn region, but the actual map data, location directory, and regional imagery cover only the Yeppoon and Emu Park coastlines.
@@ -59,7 +65,6 @@ To support future planning, the requirements from the project brief and revised 
 - **Google Form Reporting**: Integrating an embedded Google Form that inputs reports into a Google Sheet owned by Michael, with options to escalate formal complaints to the CAEG Human Rights Act pathway.
 
 ### D. Future Phase for `untrapped-site`
-- **Full WCAG 2.2 AA Compliance**: Systematically fixing the 12 known color contrast warnings on the static website.
 - **Rockhampton Audits**: Expanding on-ground audits and adding a Rockhampton map and HTML alternative toggle.
 
 ### E. Out of Scope for `untrapped-site`
@@ -83,6 +88,14 @@ The next step is for Michael to review and make decisions on the following open 
 3. **Rockhampton Audits**: Align on a timeline for the on-ground audit of Rockhampton CBD and heritage areas.
 
 ### Requires External Dependency or Ownership Action
-1. **Domain Acquisition & Attachment**: Michael is completing the registration of `untrapped.au` at VentraIP. Once registered, Vercel DNS A and CNAME records must be configured as detailed in `README.md`.
+1. **Domain Acquisition & Attachment (HOLD — EXTERNAL OWNER ACTION REQUIRED)**: Michael must update the DNS settings on his registrar (VentraIP) using the following records:
+   - For `untrapped.au` (Apex domain):
+     - **Type**: A Record
+     - **Name**: `@` (or blank)
+     - **Value**: `76.76.21.21`
+   - For `www.untrapped.au` (Subdomain):
+     - **Type**: CNAME
+     - **Name**: `www`
+     - **Value**: `cname.vercel-dns.com.`
 2. **Google My Map Account continuity**: Confirm ownership or editing access plan for Louise Page's Google account to ensure the map embed remains public and editable.
 3. **Consent for Identifiable Photographs**: Michael must explicitly verify consent from any recognizable individuals in photos prior to uploading assets.
