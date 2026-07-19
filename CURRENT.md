@@ -23,7 +23,7 @@ Read order:
 - **Live Production URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
 - **Live Custom Domain**: `HOLD — EXTERNAL OWNER ACTION REQUIRED` (Added to Vercel project configuration; pending DNS updates on VentraIP by Michael Page)
 - **Live Branch**: `main`
-- **Latest Verified Commit**: [will be updated after commit]
+- **Latest Verified Commit**: `e5b164539ef42ab54fb6ebdb8778f654b9d0ab5c` ("feat: refine site structure content and accessibility")
 - **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to this repository version.
 
 ---
