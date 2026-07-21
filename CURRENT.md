@@ -24,9 +24,9 @@ Read order:
 - **Permanent www Redirect**: [https://www.untrapped.au](https://www.untrapped.au) &rarr; [https://untrapped.au](https://untrapped.au) (HTTP 308 Permanent Redirect)
 - **Fallback/Platform URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
 - **Live Branch**: `main`
-- **Latest Verified Commit**: `cf9aa71626f6345ecdb2231bf3fa52cd65882fe5` ("docs: update deployment model and research status")
-- **Production Deployment ID**: `dpl_4HwJVYFb3zaoUWxtnDKZpPg81kUp`
-- **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to the latest automated push commit `cf9aa71` deployed automatically.
+- **Latest Verified Commit**: `967aa1461ff4fbf5069fafe5e81f18579469e8cc` ("docs: finalize verified automatic deployment status in README and CURRENT")
+- **Production Deployment ID**: `dpl_73DLjbPgWSoQd6AJYc3WwwV3GzUo`
+- **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to the latest automated push commit `967aa14` deployed automatically.
 
 ---
 
