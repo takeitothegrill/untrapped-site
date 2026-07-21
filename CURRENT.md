@@ -24,9 +24,9 @@ Read order:
 - **Permanent www Redirect**: [https://www.untrapped.au](https://www.untrapped.au) &rarr; [https://untrapped.au](https://untrapped.au) (HTTP 308 Permanent Redirect)
 - **Fallback/Platform URL**: [https://untrapped-site.vercel.app/](https://untrapped-site.vercel.app/)
 - **Live Branch**: `main`
-- **Latest Verified Commit**: `087c7fdb3132e4d0dcd4c312781cc3f901111666` ("refactor: strengthen research carer support story")
-- **Production Deployment ID**: `dpl_6VisQTNd1tQNaJc3rAS3jurGTk56` (corresponds to older commit `022d07935f96e9f899a8f54173177026b4c863cc`)
-- **Git Alignment**: Local `HEAD` matches `origin/main` after push (`087c7fd`). However, the Vercel production deployment remains stale at commit `022d079` deployed manually.
+- **Latest Verified Commit**: `cf9aa71626f6345ecdb2231bf3fa52cd65882fe5` ("docs: update deployment model and research status")
+- **Production Deployment ID**: `dpl_4HwJVYFb3zaoUWxtnDKZpPg81kUp`
+- **Git Alignment**: Local `HEAD` matches `origin/main` after push. Production Vercel deployment corresponds exactly to the latest automated push commit `cf9aa71` deployed automatically.
 
 ---
 
@@ -35,7 +35,7 @@ Read order:
 | Check | Status | Verification Detail |
 |---|---|---|
 | **Production URL Active** | **PASS** | Live site verified via python inspect script. |
-| **GitHub/Vercel Sync** | **HOLD** | GitHub-to-Vercel integration has been configured, but pushing commit `087c7fd` to main did not trigger an automatic Vercel build/deployment. |
+| **GitHub/Vercel Sync** | **PASS** | GitHub-to-Vercel integration is configured and active. Pushes to origin/main automatically trigger production builds and deployments. |
 | **Responsive Presentation** | **PASS** | Layouts verified at 360px, 390px, 768px, and desktop widths. |
 | **Scope Isolation** | **PASS** | No backend dependencies, no database, no scripting creep. Pure static page. |
 | **Accessibility Status** | **PASS** | Automated scans verified 0 violations on homepage and about page. Research page contains 23 known color-contrast findings retained from the approved visual design story. Skip-to-content links, landmarks, color-independent link styles, keyboard visible focus, unique IDs, and chart alt labels are fully implemented. |
@@ -44,12 +44,12 @@ Read order:
 | **HTTPS/SSL Certificate** | **PASS** | Valid SSL certificate provisioned automatically by Vercel; all traffic resolved over HTTPS. |
 | **Homepage Validation** | **PASS** | Homepage successfully loads at [https://untrapped.au](https://untrapped.au). |
 | **About Page Validation** | **PASS** | About page successfully loads at [https://untrapped.au/about.html](https://untrapped.au/about.html). |
-| **Research Page Validation** | **HOLD** | Research page loads, but is serving the old page content (stale production). The new carers/NDIS data story (3.26:1 ratio, stat cards, horizontal bars) is pushed to GitHub but not yet deployed. |
+| **Research Page Validation** | **PASS** | Research page successfully loads at [https://untrapped.au/research.html](https://untrapped.au/research.html) with complete NDIS/carers data story. |
 | **308 Redirect Validation** | **PASS** | `www.untrapped.au` correctly triggers a 308 Permanent Redirect to the apex domain `untrapped.au`. |
 | **Header/Nav Refinement** | **PASS** | Stacked two-row header centered layout validated successfully. Logo and tagline sit together horizontally. |
 | **Hero Text Legibility** | **PASS** | Semi-opaque card overlay with left teal border adds strong contrast to hero subtitle text. |
 | **Findings Card Spacing** | **PASS** | Visual breathing room increased above the infrastructure findings cards by adding scoped header margin. |
-| **Deployment Discrepancy** | **HOLD** | Identified and logged Vercel automatic-trigger omission for today's commit `087c7fd`. Pushes do not yet auto-deploy. |
+| **Deployment Discrepancy** | **RESOLVED** | Confirmed and verified GitHub-to-Vercel automatic synchronization is active and working. |
 | **Raw-HTML Verification** | **PASS** | Checked live pages via `curl.exe` with a 10s timeout to confirm exact copy strings and research story exist in production. |
 | **Human Visual Acceptance** | **PASS** | Michael's manual visual review on desktop and mobile successfully accepted. |
 | **Personal Email Reporting** | **LIMITATION** | Personal iCloud address is exposed in `mailto:` links as an accepted current-state limitation in V1.0. |

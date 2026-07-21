@@ -88,7 +88,7 @@ Vercel will ask:
 5. *In which directory is your code located?* **./**
 6. *Want to modify these settings?* **No**
 
-To deploy to production (Note: GitHub-to-Vercel integration is configured, but automatic synchronization is currently unverified / on HOLD. Manual production update from the local repository remains the fallback method):
+To deploy to production (Note: GitHub-to-Vercel integration is configured and active. Pushes to origin/main automatically trigger production deployments on Vercel. The manual command below is retained as a fallback recovery path):
 ```bash
 npx vercel --prod --yes
 ```
@@ -99,7 +99,7 @@ npx vercel --prod --yes
 
 The static website is deployed to Vercel with the following domain and deployment configuration:
 
-- **Deployment Model**: GitHub is the canonical source. GitHub-to-Vercel integration is configured for the `takeitothegrill/untrapped-site` repository on the `main` branch, but automatic production synchronization is currently unverified / on HOLD. Manual production deployment via the Vercel CLI remains the fallback verified method:
+- **Deployment Model**: GitHub is the canonical source. The Vercel project is connected to the `takeitothegrill/untrapped-site` repository. Pushes to `main` trigger production deployments automatically. The manual Vercel CLI command remains documented as an explicit fallback/recovery method:
   ```bash
   npx vercel --prod --yes
   ```
